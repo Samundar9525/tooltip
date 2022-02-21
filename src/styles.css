@@ -1,1 +1,155 @@
-/* You can add global styles to this file, and also import other style files */
+ul.techlist{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.techlist li{
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px 13px;
+  margin-bottom: 10px;
+}
+
+body{
+  background-color: rgb(66, 65, 65);
+}
+.sidenav {
+  height: 100%;
+  width: 6%;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 40px;
+}
+
+.sidenav2 {
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 40px;
+}
+.sidenav3 {
+  height: 100%;
+  width: 10%;
+  position: fixed;
+
+  margin-left: -6rem;
+  /* background-color: red; */
+  overflow-x: hidden;
+  padding-top: 40px;
+
+}
+
+.sidenav4 {
+  height: 15%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* background-color: red; */
+  overflow-x: hidden;
+  padding-top: 45px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav li {font-size: 18px;}
+  .sidenav2 {padding-top: 15px;}
+  .sidenav2 li {font-size: 18px;}
+}
+
+li{
+
+  list-style-type: none;
+  /* background-color: white; */
+  color: white;
+  margin-left: -12px;
+  margin-bottom: 20px;
+
+}
+
+.mylist li{
+  margin-right: 35px;
+  margin-top: -35px;
+  float: right;
+  display: block;
+  padding: 10px;
+}
+
+
+.tooltip1 {
+  position: relative;
+  display: inline-block;
+
+}
+
+.tooltip1 .tooltiptext {
+  visibility: hidden;
+  background-color: white	;
+  color: #111;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px ;
+  position: absolute;
+  margin-left: 10px;
+  font-size:small;
+
+}
+
+.tooltip1 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+  z-index: 1;
+}
+
+
+.tooltip2 {
+  position: relative;
+  /* display: inline-block; */
+
+  float:right;
+}
+
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 55px;
+  background-color: white;
+  color:black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  font-size:x-small;
+  margin-left: -35px;
+  padding: 5px;
+}
+
+.tooltip2 .tooltiptext2::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+
+}
+
