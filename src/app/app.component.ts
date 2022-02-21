@@ -13,7 +13,7 @@ export class AppComponent implements AfterViewInit {
   constructor(private mystl:MyserviceService) {
   }
   ngAfterViewInit(): void {
-    fromEvent(this.tabtoogle.nativeElement,'').subscribe(
+    fromEvent(this.tabtoogle.nativeElement,'click').subscribe(
       res=>{
         console.log("hello");
         this.mystl.tab_toggle_keyup("myco");
